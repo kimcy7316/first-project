@@ -1,0 +1,203 @@
+:root {
+  --white: #ffffff;
+  --red: #e84d3c;
+  --yellow: #f0c446;
+  --darkblue: #2b3e4f;
+  --green: #46b29d;
+  --blue: #2980ba;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: Noto Sans, Roboto, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+img {
+  font-size: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+.mx-12 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.jt-sb {
+  justify-content: space-between;
+}
+
+.jt-ct {
+  justify-content: center;
+}
+
+.al-ct {
+  align-items: center;
+}
+
+.fd-row {
+  flex-direction: column;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-darkblue {
+  background-color: var(--darkblue);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-pattern {
+  background-image: url("https://lessipe.com/images/polygonal-lines.png");
+  background-repeat: repeat;
+}
+
+.clear-both::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#app {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  padding-top: 139px;
+}
+
+.tx-white {
+  color: #ffffff;
+}
+
+footer {
+  background-image: radial-gradient(circle at 1% 1%, #328bf2, #1644ad);
+  height: 80px;
+}
+
+a.link {
+  font-size: 1.4rem;
+  color: #2a3d4e;
+  border: 1px solid #2a3d4e;
+  height: 42px;
+  line-height: 42px;
+  width: 150px;
+  border-radius: 42px;
+  background-color: var(--white);
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  transition: all 0.25s;
+}
+
+a.link:hover {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+a.link.ghost {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+a.link.blue:hover {
+  border-color: #2779bd;
+  color: #2779bd;
+}
+
+a.auto {
+  margin: auto;
+}
+
+button.ghost {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#slide-up-title {
+  transition: all 1s;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+#slide-up-title.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#slide-up-description {
+  transition: all 1s;
+  transition-delay: 0.25s;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+#slide-up-description.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#slide-up-image {
+  transition: all 0.75s;
+  opacity: 0;
+  transform: translateY(150px);
+}
+
+#slide-up-image.active {
+  opacity: 1;
+  transform: translateY(0);
+}
