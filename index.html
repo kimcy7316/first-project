@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/base.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/media.css" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <title>개발자를 위한 개발 레시피</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="header-notice">
+          <a
+            href="https://www.youtube.com/channel/UC516FbDUXu_-vIZwdfayK0w"
+            target="_blank"
+          >
+            <div>
+              운영 플랫폼을 변경하여 앞으로의 강의는 유튜브에 모두 업로드할
+              예정입니다.
+            </div>
+            <div>
+              여기를 클릭하여 유튜브 채널에서 더 많은 강의를 만나보세요.
+            </div>
+          </a>
+        </div>
+        <nav id="navigation">
+          <div class="nav-content mx-12">
+            <div>
+              <a href="https://lessipe.com">
+                <img
+                  src="https://lessipe.com/images/logo/logo-white.png"
+                  alt="레시피 로고"
+                  width="100"
+                />
+              </a>
+            </div>
+            <div class="nav-links">
+              <div class="desktop">
+                <a href="https://lessipe.com/browse" class="nav-link tx-white">
+                  강의보기
+                </a>
+                <a
+                  href="https://lessipe.com/question"
+                  class="nav-link tx-white"
+                >
+                  질문답변
+                </a>
+                <a href="https://lessipe.com/login" class="nav-link tx-white">
+                  로그인
+                </a>
+              </div>
+              <div class="mobile">
+                <button id="menu" class="ghost">
+                  <span class="material-icons"> menu </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="container">
+        <div class="banner">
+          <div class="banner-content flex jt-sb mx-12">
+            <div class="flex fd-row jt-sb">
+              <div>
+                <h1 id="slide-up-title">Vue.js에 템플릿 적용하기</h1>
+
+                <div id="slide-up-description" class="banner-description">
+                  <div>Colorlib에서 무료로 제공하는 Fashe템플릿을 사용해서</div>
+                  <div>Vue.js에 더 익숙해질 수 있는 강의입니다.</div>
+                </div>
+              </div>
+
+              <div class="button-link">
+                <a href="https://lessipe.com/course/35">강의보러가기</a>
+              </div>
+            </div>
+
+            <div id="slide-up-image" class="banner-image">
+              <img
+                src="https://lessipe.com/images/vue-devices.png"
+                alt="메인 배너"
+                class="tw-mt-10"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="class-list mx-12">
+          <h2>추천강의</h2>
+
+          <div class="class-items flex">
+            <div class="class-item">
+              <a href="https://lessipe.com/course/36">
+                <div class="class-item__block">
+                  <div class="class-item__image bg-red">
+                    <img
+                      src="https://lessipe.com/file/course/15561812324742.png"
+                      alt="React.js로 CRUD 구현하기"
+                    />
+                  </div>
+
+                  <div class="class-item__title">React.js로 CRUD 구현하기</div>
+
+                  <div class="class-item__price clear-both">
+                    <span class="right">무료</span>
+                  </div>
+
+                  <div class="class-item__label">웹개발</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="class-item">
+              <a href="https://lessipe.com/course/35">
+                <div class="class-item__block">
+                  <div class="class-item__image bg-red">
+                    <img
+                      src="https://lessipe.com/file/course/15542903596350.png"
+                      alt="[Vue 실전] Vue.js에 템플릿 적용하기"
+                    />
+                  </div>
+
+                  <div class="class-item__title">
+                    [Vue 실전] Vue.js에 템플릿 적용하기
+                  </div>
+
+                  <div class="class-item__price clear-both">
+                    <span class="right">55,000 원</span>
+                  </div>
+
+                  <div class="class-item__label">웹개발</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="class-item">
+              <a href="https://lessipe.com/course/34">
+                <div class="class-item__block">
+                  <div class="class-item__image bg-red">
+                    <img
+                      src="https://lessipe.com/file/course/15520322296775.png"
+                      alt="웹개발 꿀팁"
+                    />
+                  </div>
+
+                  <div class="class-item__title">웹개발 꿀팁</div>
+
+                  <div class="class-item__price clear-both">
+                    <span class="right">무료</span>
+                  </div>
+
+                  <div class="class-item__label">웹개발</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="class-item">
+              <a href="https://lessipe.com/course/33">
+                <div class="class-item__block">
+                  <div class="class-item__image bg-yellow">
+                    <img
+                      src="https://lessipe.com/file/course/15517701572264.png"
+                      alt="Python 시작하기"
+                    />
+                  </div>
+
+                  <div class="class-item__title">Python 시작하기</div>
+
+                  <div class="class-item__price clear-both">
+                    <span class="right">무료</span>
+                  </div>
+
+                  <div class="class-item__label">프로그래밍 언어</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="class-item">
+              <a href="https://lessipe.com/course/32">
+                <div class="class-item__block">
+                  <div class="class-item__image bg-darkblue">
+                    <img
+                      src="https://lessipe.com/file/course/15517521077796.png"
+                      alt="도커 시작하기"
+                    />
+                  </div>
+
+                  <div class="class-item__title">도커 시작하기</div>
+
+                  <div class="class-item__price clear-both">
+                    <span class="right">무료</span>
+                  </div>
+
+                  <div class="class-item__label">서버</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="class-item">
+              <a href="https://lessipe.com/course/31">
+                <div class="class-item__block">
+                  <div class="class-item__image bg-darkblue">
+                    <img
+                      src="https://lessipe.com/file/course/15513508345471.png"
+                      alt="다양한 예제로 재미있게 배우는 인공지능"
+                    />
+                  </div>
+
+                  <div class="class-item__title">
+                    다양한 예제로 재미있게 배우는 인공지능
+                  </div>
+
+                  <div class="class-item__price clear-both">
+                    <span class="right">무료</span>
+                  </div>
+
+                  <div class="class-item__label">4차 산업혁명</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="class-item">
+              <a href="https://lessipe.com/course/30">
+                <div class="class-item__block">
+                  <div class="class-item__image bg-red">
+                    <img
+                      src="https://lessipe.com/file/course/15513449658694.png"
+                      alt="vue 중급 강의"
+                    />
+                  </div>
+
+                  <div class="class-item__title">Vue.js 중급 강의</div>
+
+                  <div class="class-item__price clear-both">
+                    <span class="right">무료</span>
+                  </div>
+
+                  <div class="class-item__label">웹개발</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="class-item">
+              <a href="https://lessipe.com/course/29">
+                <div class="class-item__block">
+                  <div class="class-item__image bg-red">
+                    <img
+                      src="https://lessipe.com/file/course/15511513049057.png"
+                      alt="VueJS로 AWS S3 Bucket에 파일 업로드하기"
+                    />
+                  </div>
+
+                  <div class="class-item__title">
+                    VueJS로 AWS S3 Bucket에 파일 업로드하기
+                  </div>
+
+                  <div class="class-item__price clear-both">
+                    <span class="right">무료</span>
+                  </div>
+
+                  <div class="class-item__label">웹개발</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="class-item">
+              <a href="https://lessipe.com/course/28">
+                <div class="class-item__block">
+                  <div class="class-item__image bg-red">
+                    <img
+                      src="https://lessipe.com/file/course/15511489558090.png"
+                      alt="Vue.js 3.0 + Vuetifty로 todolist 만들기"
+                    />
+                  </div>
+
+                  <div class="class-item__title">
+                    Vue.js 3.0 + Vuetifty로 todolist 만들기
+                  </div>
+
+                  <div class="class-item__price clear-both">
+                    <span class="right">무료</span>
+                  </div>
+
+                  <div class="class-item__label">웹개발</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="class-item">
+              <a href="https://lessipe.com/course/27">
+                <div class="class-item__block">
+                  <div class="class-item__image bg-red">
+                    <img
+                      src="https://lessipe.com/file/course/15511481184311.png"
+                      alt="Vue.js로 가위바위보 게임 만들기"
+                    />
+                  </div>
+
+                  <div class="class-item__title">
+                    Vue.js로 가위바위보 게임 만들기
+                  </div>
+
+                  <div class="class-item__price clear-both">
+                    <span class="right">무료</span>
+                  </div>
+
+                  <div class="class-item__label">웹개발</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="class-item">
+              <a href="https://lessipe.com/course/26">
+                <div class="class-item__block">
+                  <div class="class-item__image bg-red">
+                    <img
+                      src="https://lessipe.com/file/course/15511451245535.png"
+                      alt="Vue CLI 3.0 시작하기"
+                    />
+                  </div>
+
+                  <div class="class-item__title">Vue CLI 3.0 시작하기</div>
+
+                  <div class="class-item__price clear-both">
+                    <span class="right">무료</span>
+                  </div>
+
+                  <div class="class-item__label">웹개발</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="class-item">
+              <a href="https://lessipe.com/course/25">
+                <div class="class-item__block">
+                  <div class="class-item__image bg-red">
+                    <img
+                      src="https://lessipe.com/file/course/15510750255044.png"
+                      alt="부트스트랩3 기초 강의"
+                    />
+                  </div>
+
+                  <div class="class-item__title">부트스트랩3 기초 강의</div>
+
+                  <div class="class-item__price clear-both">
+                    <span class="right">무료</span>
+                  </div>
+
+                  <div class="class-item__label">웹개발</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="do bg-pattern">
+          <h2>오늘도 새로운 강의를 열심히 제작하고 있습니다.</h2>
+
+          <div class="do-info flex al-ct jt-ct">
+            <div class="do-info__item">
+              <div class="do-info__title">무료강의</div>
+              <div class="do-info__count">30개</div>
+            </div>
+            <div class="do-info__item">
+              <div class="do-info__title">강의시간</div>
+              <div class="do-info__count">107시간</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="category mx-12">
+          <div class="category-item blue">
+            <div class="category-item__image">
+              <a href="https://lessipe.com/browse?category_id%5B0%5D=7">
+                <img
+                  src="https://lessipe.com/images/icons/tools.png"
+                  alt="개발도구"
+                />
+              </a>
+              <div class="category-item__title">개발도구</div>
+            </div>
+            <div class="category-item__bottom">
+              <div class="category-description flex">
+                <div class="category-description__item">
+                  <div class="category-description__count">2</div>
+                  <div class="category-description__name">강의</div>
+                </div>
+                <div class="category-description__item line">
+                  <div class="category-description__count">52</div>
+                  <div class="category-description__name">수업</div>
+                </div>
+              </div>
+              <div class="category-link">
+                <a
+                  class="link auto ghost"
+                  href="https://lessipe.com/browse?category_id%5B0%5D=7"
+                >
+                  강의보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="category-item red">
+            <div class="category-item__image">
+              <a href="https://lessipe.com/browse?category_id%5B0%5D=9">
+                <img
+                  src="https://lessipe.com/images/icons/webdev.png"
+                  alt="웹개발"
+                />
+              </a>
+              <div class="category-item__title">웹개발</div>
+            </div>
+            <div class="category-item__bottom">
+              <div class="category-description flex">
+                <div class="category-description__item">
+                  <div class="category-description__count">18</div>
+                  <div class="category-description__name">강의</div>
+                </div>
+                <div class="category-description__item line">
+                  <div class="category-description__count">398</div>
+                  <div class="category-description__name">수업</div>
+                </div>
+              </div>
+              <div class="category-link">
+                <a
+                  class="link auto ghost"
+                  href="https://lessipe.com/browse?category_id%5B0%5D=9"
+                >
+                  강의보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="category-item yellow">
+            <div class="category-item__image">
+              <a href="https://lessipe.com/browse?category_id%5B0%5D=11">
+                <img
+                  src="https://lessipe.com/images/icons/language.png"
+                  alt="프로그래밍 언어"
+                />
+              </a>
+              <div class="category-item__title">프로그래밍 언어</div>
+            </div>
+
+            <div class="category-item__bottom">
+              <div class="category-description flex">
+                <div class="category-description__item">
+                  <div class="category-description__count">5</div>
+                  <div class="category-description__name">강의</div>
+                </div>
+                <div class="category-description__item line">
+                  <div class="category-description__count">106</div>
+                  <div class="category-description__name">수업</div>
+                </div>
+              </div>
+              <div class="category-link">
+                <a
+                  class="link auto ghost"
+                  href="https://lessipe.com/browse?category_id%5B0%5D=11"
+                >
+                  강의보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="category-item green">
+            <div class="category-item__image">
+              <a href="https://lessipe.com/browse?category_id%5B0%5D=14">
+                <img
+                  src="https://lessipe.com/images/icons/database.png"
+                  alt="데이터베이스"
+                />
+              </a>
+              <div class="category-item__title">데이터베이스</div>
+            </div>
+
+            <div class="category-item__bottom">
+              <div class="category-description flex">
+                <div class="category-description__item">
+                  <div class="category-description__count">1</div>
+                  <div class="category-description__name">강의</div>
+                </div>
+                <div class="category-description__item line">
+                  <div class="category-description__count">32</div>
+                  <div class="category-description__name">수업</div>
+                </div>
+              </div>
+              <div class="category-link">
+                <a
+                  class="link auto ghost"
+                  href="https://lessipe.com/browse?category_id%5B0%5D=14"
+                >
+                  강의보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="category-item darkblue">
+            <div class="category-item__image">
+              <a href="https://lessipe.com/browse?category_id%5B0%5D=16">
+                <img
+                  src="https://lessipe.com/images/icons/server.png"
+                  alt="서버"
+                />
+              </a>
+              <div class="category-item__title">서버</div>
+            </div>
+
+            <div class="category-item__bottom">
+              <div class="category-description flex">
+                <div class="category-description__item">
+                  <div class="category-description__count">3</div>
+                  <div class="category-description__name">강의</div>
+                </div>
+                <div class="category-description__item line">
+                  <div class="category-description__count">12</div>
+                  <div class="category-description__name">수업</div>
+                </div>
+              </div>
+              <div class="category-link">
+                <a
+                  class="link auto ghost"
+                  href="https://lessipe.com/browse?category_id%5B0%5D=16"
+                >
+                  강의보기
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="more-class mx-12">
+          <a class="link blue" href="">전체강의보기</a>
+        </div>
+      </div>
+    </div>
+
+    <footer />
+
+    <div id="mene-modal" class="modal">
+      <div class="clear-both">
+        <button id="close" class="right ghost close-btn">
+          <span class="material-icons"> clear </span>
+        </button>
+      </div>
+
+      <div class="modal-content">
+        <div class="logo">
+          <img
+            src="https://lessipe.com/images/logo/logo-big.png"
+            width="200"
+            alt="개발 레시피 로고 이미지"
+          />
+        </div>
+
+        <ul class="modal-nav">
+          <li>
+            <a href="https://lessipe.com/browse"> 강의보기 </a>
+          </li>
+          <li>
+            <a href="https://lessipe.com/question"> 질문답변 </a>
+          </li>
+          <li>
+            <a href="https://lessipe.com/login"> 로그인 </a>
+          </li>
+          <li>
+            <a href="https://lessipe.com/register"> 회원가입 </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
